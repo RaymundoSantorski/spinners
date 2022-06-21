@@ -66,6 +66,37 @@ body{
     animation-iteration-count: infinite;
 }
 
+.fourth__spinner{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    margin: auto;
+    background-color: black;
+    border: 0px solid var(--blue);
+    animation-duration: 3s;
+    animation-name: fourth_animation;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation-fill-mode: backwards; */
+}
+
+@keyframes fourth_animation {
+    0%{
+        background-color: var(--blue);
+        border: 0px solid black;
+    }
+    49%{
+        border: 30px solid black;
+    }
+    50%{
+        background-color: black;
+        border: 0px solid var(--blue);
+    }
+    99%{
+        border: 30px solid var(--blue);
+    }
+} 
+
 @keyframes third_animation {
     0%{
         box-shadow: 0 0 0 15px var(--blue);
