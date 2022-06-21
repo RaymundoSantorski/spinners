@@ -53,6 +53,31 @@ body{
     animation-iteration-count: infinite;
 }
 
+.third__spinner{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    margin: auto;
+    background-color: white;
+    border: 5px solid var(--blue);
+    animation-duration: 1.5s;
+    animation-name: third_animation;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes third_animation {
+    0%{
+        box-shadow: 0 0 0 15px var(--blue);
+    }
+    50%{
+        box-shadow: 0 0 0 5px var(--blue);
+    }
+    100%{
+        box-shadow: 0 0 0 15px var(--blue);
+    }
+}
+
 @keyframes second_animation {
     0%{
         border: 10px solid var(--blue);
