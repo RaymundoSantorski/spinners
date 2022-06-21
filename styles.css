@@ -5,7 +5,8 @@
 }
 
 body{
-    background-color: rgb(17, 138, 240);
+    --blue: rgb(17, 138, 240);
+    background-color: var(--blue);
     padding: 10px;
 }
 
@@ -45,8 +46,38 @@ body{
     border-radius: 50%;
     margin: auto;
     background-color: white;
-    box-shadow: 0 0 0 5px rgba(17, 138, 0);
-    border: 5px solid rgba(17, 138, 240);
+    border: 5px solid var(--blue);
+    animation-duration: 1.5s;
+    animation-name: second_animation;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes second_animation {
+    0%{
+        border: 10px solid var(--blue);
+        border-radius: 50%;
+    }
+    20%{
+        border: 15px solid var(--blue);
+        border-radius: 75%;
+    }
+    40%{
+        border: 20px solid var(--blue);
+        border-radius: 100%;
+    }
+    60%{
+        border: 15px solid var(--blue);
+        border-radius: 75%;
+    }
+    80%{
+        border: 10px solid var(--blue);
+        border-radius: 50%;
+    }
+    100%{
+        border: 5px solid var(--blue);
+        border-radius: 75%;
+    }
 }
 
 
